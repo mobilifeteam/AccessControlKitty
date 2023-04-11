@@ -36,6 +36,8 @@
 		EDE6D94C22183992002AF4BB /* AccessControlKittyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE6D94B22183992002AF4BB /* AccessControlKittyTests.swift */; };
 		EDE6D9582218405F002AF4BB /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE6D9572218405F002AF4BB /* XcodeKit.framework */; };
 		EDE6D959221846C3002AF4BB /* AccessControlCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18F85720948921002BD062 /* AccessControlCommand.swift */; };
+		F487BB7429E5140E00D13DBB /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE6D9572218405F002AF4BB /* XcodeKit.framework */; };
+		F487BB7529E5140E00D13DBB /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE6D9572218405F002AF4BB /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F487BB7629E5140F00D13DBB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F487BB7529E5140E00D13DBB /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F487BB7429E5140E00D13DBB /* XcodeKit.framework in Frameworks */,
 				ED0062C22208E6FB00FC48B2 /* SwiftLineParser.framework in Frameworks */,
 				ED18F8132094889C002BD062 /* Cocoa.framework in Frameworks */,
 			);
@@ -322,6 +336,7 @@
 				ED18F80C2094889C002BD062 /* Sources */,
 				ED18F80D2094889C002BD062 /* Frameworks */,
 				ED18F80E2094889C002BD062 /* Resources */,
+				F487BB7629E5140F00D13DBB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -701,10 +716,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AccessControlKitty/AccessControlKitty.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9KT5BGB8MA;
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				INFOPLIST_FILE = AccessControlKitty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -723,10 +738,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AccessControlKitty/AccessControlKitty.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9KT5BGB8MA;
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				INFOPLIST_FILE = AccessControlKitty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -743,9 +758,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AccessControlKittyExtension/AccessControlKittyExtension.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9KT5BGB8MA;
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				INFOPLIST_FILE = AccessControlKittyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -764,10 +780,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AccessControlKittyExtension/AccessControlKittyExtension.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9KT5BGB8MA;
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				INFOPLIST_FILE = AccessControlKittyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -787,12 +803,12 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9KT5BGB8MA;
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 9;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -820,12 +836,12 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 9;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RNHQYN2ZEK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 9;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
